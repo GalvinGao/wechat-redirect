@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function jump(){
+var thisurl = document.URL;
+var cuturl = thisurl.substr(45);
+var thisua = navigator.userAgent; 
+alert(thisua);
+if thisua.indexOf('MicroMessenger')>-1) {
+alert("MicroMessenger!");
+} else {
+alert("Not MicroMessenger!");
+} }
+jump();
+</script>
+</head>
+<body>
+</body>
+</html>
