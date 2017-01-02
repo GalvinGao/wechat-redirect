@@ -5,9 +5,9 @@ function jump(){
 var thisurl = document.URL;
 var cuturl = thisurl.substr(45);
 var thisua = navigator.userAgent; 
-alert(thisua);
+var thisua = "MicroMessenger";
 if(thisua.indexOf('MicroMessenger')>-1) {
-document.write("<img src='http://p1.bpimg.com/1949/d2d1863472cb069a.png' />");
+document.write("<img src='http://p1.bpimg.com/1949/d2d1863472cb069a.png' width='"+screen.width+"' />");
 } else {
 window.location.href=cuturl;
 } }
